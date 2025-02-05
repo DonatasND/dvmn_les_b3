@@ -4,9 +4,6 @@ from dotenv import load_dotenv
 
 load_dotenv('data.env')
 
-login = os.getenv("login")
-password = os.getenv("password")
-
 server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
 server.login(os.getenv('login'), os.getenv('password'))
 
